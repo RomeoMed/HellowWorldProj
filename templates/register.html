@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>HW Registration Form</title>
+		<link rel="stylesheet" href="/static/css/main.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css"/>
+	</head>
+	<body>
+		<header>
+		</header>
+		<nav>
+            <span id="title">Romeo's Registration Site</span>
+		</nav>
+		<main>
+			<div class="container">
+				<h1>Register</h1>
+				<hr>
+				<form role="form" action="/submit-form" method="Post">
+					<div class="row">
+						<div class="col-lg-6">
+							<label for="first_name"><b>First Name</b></label>
+							<input id="first_name" class="form_input" type="text" placeholder="Bob" name="first_name" required />
+						</div>
+						<div class="col-lg-6">
+							<label for="last_name"><b>Last Name</b></label>
+							<input id="last_name" class="form_input" type="text" placeholder="Example" name="last_name" required />
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-6">
+							<label for="address1"><b>Address 1</b></label>
+							<input id="address1" class="form_input" type="text" placeholder="1234 Some St" name="address1" required />
+						</div>
+						<div class="col-lg-6">
+							<label for="address2"><b>Address 2</b></label>
+							<input id="address2" class="form_input" type="text" placeholder="Apt 1" name="address2"/>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-6">
+							<label for="city"><b>City</b></label>
+							<input id="city" class="form_input" type="text" placeholder="Some City" name="city" required />
+						</div>
+						<div class="col-lg-6">
+							<label for="state"><b>State</b></label>
+							<input id="state" class="form_input" type="text" placeholder="MI" name="state" required />
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-6">
+							<label for="zip"><b>Zip</b></label>
+							<input id="zip" class="form_input" type="text" placeholder="48188" name="zip" required />
+						</div>
+						<div class="col-lg-6">
+							<label for="country"><b>Country</b></label>
+							<input id="country" class="form_input" type="text" placeholder="US" name="country" required />
+						</div>
+					</div>
+					<div class="row btnRow">
+						<button type="submit" class="btnRegister">Register</button>
+					</div>
+				</form>
+			</div>
+		</main>
+		<footer>
+		</footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
+		<script style="text/javascript" src="static/scripts/site.js"></script>
+	</body>
+</html>
